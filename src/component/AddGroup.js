@@ -12,7 +12,7 @@ export const AddGroup = () => {
     }, [dispatch])
 
     const [groupName, setGroupName] = useState('')
-    const [groupDescription, setGroupDescription] = useState('')
+    const [groupDescription, setGroupDescription] = ('')
 
     const callBackHandler = (event) => {
         event.preventDefault()

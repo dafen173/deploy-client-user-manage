@@ -1,6 +1,6 @@
-import React, {useEffect, useSelector, useState} from 'react'
+import React from 'react'
 import ReactDOM from 'react-dom'
-import {compose, createStore, applyMiddleware} from 'redux'
+import {createStore, applyMiddleware} from 'redux'
 import { composeWithDevTools } from 'redux-devtools-extension'
 import thunk from 'redux-thunk'
 import { Provider } from 'react-redux'
@@ -12,8 +12,8 @@ import App from './component/App'
 import reportWebVitals from './reportWebVitals'
 import rootReducer from './reducers'
 import initialState from './store/initialState'
-import { getUsers } from './action/getUsers'
-import { getGroups } from './action/getGroups'
+//import { getUsers } from './action/getUsers'
+//import { getGroups } from './action/getGroups'
 //import {store} from "./reducers/userReducer"
 
 /* const store = createStore(rootReducer, compose(

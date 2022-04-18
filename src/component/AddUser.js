@@ -1,4 +1,4 @@
-import React, {useState, useEffect, useLayoutEffect} from "react"
+import React, {useState, useEffect} from "react"
 import { useDispatch, useSelector } from "react-redux"
 import { addUsers } from "../action/addUsers"
 import { getGroups } from "../action/getGroups"
@@ -9,7 +9,7 @@ export const AddUser = () => {
     const dispatchGroups = useDispatch()
     useEffect(() => {
         dispatchGroups(getGroups())
-    }, [])
+    }, [dispatchGroups])
     
     const groupNameSelector = useSelector(state => state.groups.groupitems)
  
